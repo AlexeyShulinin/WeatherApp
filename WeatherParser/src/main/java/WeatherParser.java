@@ -100,20 +100,33 @@ public class WeatherParser {
                 obj.getJSONObject("main").getDouble("temp_min") - 273.15,
                 obj.getJSONObject("main").getDouble("temp_max") - 273.15);
 
-        weatherInformation.setMainInformation(obj.getJSONObject("main").getInt("pressure"),
-                obj.getJSONObject("main").getInt("humidity"),
-                0,
-                obj.getJSONObject("clouds").getInt("all"));
+        try {
+            weatherInformation.setMainInformation(obj.getJSONObject("main").getInt("pressure"),
+                    obj.getJSONObject("main").getInt("humidity"),
+                    obj.getInt("visibility"),
+                    obj.getJSONObject("clouds").getInt("all"));
+        } catch(org.json.JSONException e){
+            weatherInformation.setMainInformation(obj.getJSONObject("main").getInt("pressure"),
+                    obj.getJSONObject("main").getInt("humidity"),
+                    0,
+                    obj.getJSONObject("clouds").getInt("all"));
+        }
 
         weatherInformation.setCity(obj.getString("name"));
 
-        weatherInformation.setWind(obj.getJSONObject("wind").getInt("speed"),
-                obj.getJSONObject("wind").getInt("deg"),
-                0);
+        try {
+            weatherInformation.setWind(obj.getJSONObject("wind").getInt("speed"),
+                    obj.getJSONObject("wind").getInt("deg"),
+                    obj.getJSONObject("wind").getInt("gust"));
+        } catch(org.json.JSONException e){
+            weatherInformation.setWind(obj.getJSONObject("wind").getInt("speed"),
+                    obj.getJSONObject("wind").getInt("deg"),
+                    0);
+        }
 
         System.out.println(weatherInformation.getCity()+"    "
                 +weatherInformation.getCoordinates().getLongitude()+"|"+weatherInformation.getCoordinates().getLatitude()+"       "
-                +weatherInformation.getTemperature().getTemperature()+"           "
+                +String.format("%.1f",weatherInformation.getTemperature().getTemperature())+"           "
                 +weatherInformation.getWind().getSpeed()+"             "
                 +weatherInformation.getMainInformation().getPressure()+"           "
                 +weatherInformation.getMainInformation().getHumidity());
