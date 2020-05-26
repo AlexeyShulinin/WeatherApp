@@ -23,9 +23,9 @@ public class WeatherParser {
         String line;
         StringBuffer responseContent = new StringBuffer("[");
         try {
-            String city = "Minsk";
+            String cityMinsk = "Minsk";
             String key = "b53326a51f0e88541b3e496bfacfdd85";
-            String requestString = "http://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid="+key;
+            String requestString = "http://api.openweathermap.org/data/2.5/weather?q="+ cityMinsk +"&appid="+key;
             URL urlMinsk = new URL(requestString);
             connection = (HttpURLConnection) urlMinsk.openConnection();
 
@@ -64,28 +64,59 @@ public class WeatherParser {
             connection.disconnect();
         }*/
 
-        String city = "Minsk";
+        String[] cities = new String[4];
+        cities[0] = "Minsk";
+        cities[1] = "Hrodna";
+        cities[2] = "Vitebsk";
+        cities[3] = "Mahilyow";
         String key = "b53326a51f0e88541b3e496bfacfdd85";
-        String requestString = "http://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid="+key;
+       System.out.println("City     Coordinates     Temperature     WindSpeed     Pressure     Humimdity");
+        for(int i = 0;i < cities.length;i++) {
+            String requestString = "http://api.openweathermap.org/data/2.5/weather?q=" + cities[i] + "&appid=" + key;
 
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create(requestString)).build();
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder().uri(URI.create(requestString)).build();
 
-        client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                .thenApply(HttpResponse::body)
-                //.thenApply(WeatherParser::parse)
-                .thenAccept(System.out::println)
-                .join();
+            client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+                    .thenApply(HttpResponse::body)
+                    .thenApply(WeatherParser::parse)
+                    //.thenAccept(System.out::println)
+                    .join();
+        }
 
     }
     public static String parse(String responseBody){
-        String jsonResponseBody = "[" + responseBody + "]";
-        JSONArray albums = new JSONArray(jsonResponseBody);
-        for (int i = 0; i < albums.length(); i++){
-            JSONObject album = albums.getJSONObject(i);
-            String weatherID = album.getString("name");
-            System.out.println(weatherID);
-        }
+        JSONObject obj = new JSONObject(responseBody);
+        CurrentWeatherInformation weatherInformation = new CurrentWeatherInformation();
+
+        weatherInformation.setCoordinates(obj.getJSONObject("coord").getDouble("lon"),obj.getJSONObject("coord").getDouble("lat"));
+
+        weatherInformation.setWeather(obj.getJSONArray("weather").getJSONObject(0).getInt("id"),
+                obj.getJSONArray("weather").getJSONObject(0).getString("main"),
+                obj.getJSONArray("weather").getJSONObject(0).getString("description"));
+
+        weatherInformation.setTemperature(obj.getJSONObject("main").getDouble("temp") - 273.15,
+                obj.getJSONObject("main").getDouble("feels_like") - 273.15,
+                obj.getJSONObject("main").getDouble("temp_min") - 273.15,
+                obj.getJSONObject("main").getDouble("temp_max") - 273.15);
+
+        weatherInformation.setMainInformation(obj.getJSONObject("main").getInt("pressure"),
+                obj.getJSONObject("main").getInt("humidity"),
+                0,
+                obj.getJSONObject("clouds").getInt("all"));
+
+        weatherInformation.setCity(obj.getString("name"));
+
+        weatherInformation.setWind(obj.getJSONObject("wind").getInt("speed"),
+                obj.getJSONObject("wind").getInt("deg"),
+                0);
+
+        System.out.println(weatherInformation.getCity()+"    "
+                +weatherInformation.getCoordinates().getLongitude()+"|"+weatherInformation.getCoordinates().getLatitude()+"       "
+                +weatherInformation.getTemperature().getTemperature()+"           "
+                +weatherInformation.getWind().getSpeed()+"             "
+                +weatherInformation.getMainInformation().getPressure()+"           "
+                +weatherInformation.getMainInformation().getHumidity());
         return null;
     }
 }
