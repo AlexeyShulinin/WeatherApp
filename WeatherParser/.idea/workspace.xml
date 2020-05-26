@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="573f741e-7212-4096-869c-4dd22eed48e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../JavaApp/JavaApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/Kursach.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/exception.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/exception.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/instruction.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/instruction.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/instruction.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/moneyclass.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/moneyclass.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/Current.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/FuturePlans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/MoneyClass.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/MoneyClass.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/Previous.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/mainwindow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/mainwindow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/mainwindow.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/testKursach.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/testKursach.pro.user" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1cLOlpKq7VqCeBw7CKcxXUryFRL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WeatherParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WeatherParser" />
+      <module name="WeatherApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WeatherParser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="573f741e-7212-4096-869c-4dd22eed48e5" name="Default Changelist" comment="" />
+      <created>1590304561025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590304561025</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="158" key="#Console" timestamp="1590495848273">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="158" key="#Console/0.0.1536.824@0.0.1536.824" timestamp="1590495848273" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1590495926434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1590495926434" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1590500383959">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590500383959" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1590500383959">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590500383959" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1590500383959">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590500383959" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1590500383959">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590500383959" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1590500383963">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590500383963" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1590500383963">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590500383963" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1590500383963">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590500383963" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1590500383963">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590500383963" />
+    <state x="396" y="116" width="981" height="708" key="SettingsEditor" timestamp="1590432473599">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="396" y="116" width="981" height="708" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590432473599" />
+    <state x="787" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590496536031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="787" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590496536031" />
+  </component>
+</project>
