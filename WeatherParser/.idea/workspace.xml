@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,31 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="573f741e-7212-4096-869c-4dd22eed48e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaApp/JavaApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/Kursach.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/exception.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/exception.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/instruction.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/instruction.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/instruction.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/mainwindow.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/mainwindow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/moneyclass.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QtProjects/Kursach/moneyclass.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/Current.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/FuturePlans.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/MoneyClass.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/MoneyClass.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/Previous.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/mainwindow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/mainwindow.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/mainwindow.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/testKursach.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QtProjects/testKursach/testKursach.pro.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +32,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -83,6 +62,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>

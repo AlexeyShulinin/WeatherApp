@@ -65,7 +65,7 @@ public class WeatherParser {
         }*/
 
         String[] cities = new String[4];
-        cities[0] = "Minsk";
+        cities[0] = "Mozyr";
         cities[1] = "Hrodna";
         cities[2] = "Vitebsk";
         cities[3] = "Mahilyow";
