@@ -64,11 +64,11 @@ public class WeatherParser {
             connection.disconnect();
         }*/
 
-        String[] cities = new String[4];
-        cities[0] = "Mozyr";
+        String[] cities = new String[3];
+        cities[0] = "Minsk";
         cities[1] = "Hrodna";
         cities[2] = "Vitebsk";
-        cities[3] = "Mahilyow";
+        
         String key = "b53326a51f0e88541b3e496bfacfdd85";
        System.out.println("City     Coordinates     Temperature     WindSpeed     Pressure     Humimdity");
         for(int i = 0;i < cities.length;i++) {
