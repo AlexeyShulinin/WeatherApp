@@ -64,11 +64,11 @@ public class WeatherParser {
             connection.disconnect();
         }*/
 
-        String[] cities = new String[4];
+        String[] cities = new String[3];
         cities[0] = "Minsk";
         cities[1] = "Hrodna";
         cities[2] = "Vitebsk";
-        cities[3] = "Mahilyow";
+
         String key = "b53326a51f0e88541b3e496bfacfdd85";
        System.out.println("City     Coordinates     Temperature     WindSpeed     Pressure     Humimdity");
         for(int i = 0;i < cities.length;i++) {
@@ -126,7 +126,7 @@ public class WeatherParser {
 
         System.out.println(weatherInformation.getCity()+"    "
                 +weatherInformation.getCoordinates().getLongitude()+"|"+weatherInformation.getCoordinates().getLatitude()+"       "
-                +String.format("%.1f",weatherInformation.getTemperature().getTemperature())+"           "
+                +String.format("%.2f",weatherInformation.getTemperature().getTemperature())+"           "
                 +weatherInformation.getWind().getSpeed()+"             "
                 +weatherInformation.getMainInformation().getPressure()+"           "
                 +weatherInformation.getMainInformation().getHumidity());
